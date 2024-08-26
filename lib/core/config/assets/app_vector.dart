@@ -6,5 +6,4 @@ class AppVectors {
   static const String sun = '${basepath}sun$format';
   static const String moon = '${basepath}moon$format';
   static const String topPatter = '${basepath}top-pattern$format';
-  static const String topPatte = '${basepath}top-pattern$format';
 }
