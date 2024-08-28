@@ -51,7 +51,7 @@ class GetStartedPage extends StatelessWidget {
                     height: 20,
                   ),
                   const Text(
-                    'lefdgthrgfeyjcgdrhthdgrtyukygrgrtyjfghryjygghfjyhgerdasdfrytjfgsrgrgjgferthtghjbdgrtjfgert',
+                    'lefdgthrgfeyjkjhgfcgdrhthdgrtyukygrgrtyjfghryjygghfjyhgerdasdfrytjfgsrgrgjgferthtghjbdgrtjfgert',
                     style: TextStyle(
                       fontWeight: FontWeight.w500,
                       color: AppColors.grey,
