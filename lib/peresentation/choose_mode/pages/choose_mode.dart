@@ -6,6 +6,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:pop/common/widgets/button/basic_app_button.dart';
+import 'package:pop/peresentation/auth/pages/signup_or_signin.dart';
 import 'package:pop/peresentation/choose_mode/bloc/theme_cubit.dart';
 
 import '../../../core/config/assets/app_image.dart';
@@ -60,7 +61,7 @@ class ChooseModePage extends StatelessWidget {
                           onTap: () {
                             context
                                 .read<ThemeCubit>()
-                                .updateTheme(ThemeMode.light);
+                                .updateTheme(ThemeMode.dark);
                           },
                           child: ClipOval(
                             child: BackdropFilter(
@@ -103,12 +104,12 @@ class ChooseModePage extends StatelessWidget {
                           onTap: () {
                             context
                                 .read<ThemeCubit>()
-                                .updateTheme(ThemeMode.dark);
+                                .updateTheme(ThemeMode.light);
                           },
                           child: ClipOval(
                             child: BackdropFilter(
-                                filter:
-                                    ImageFilter.blur(sigmaX: 10.0, sigmaY: 10.0),
+                                filter: ImageFilter.blur(
+                                    sigmaX: 10.0, sigmaY: 10.0),
                                 child: Container(
                                   height: 80,
                                   width: 80,
@@ -147,7 +148,7 @@ class ChooseModePage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (BuildContext context) =>
-                              const ChooseModePage(),
+                              const SignupOrSignin(),
                         ));
                   },
                   title: 'Continue',

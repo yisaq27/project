@@ -4,7 +4,7 @@ import 'package:pop/core/config/theme/app_color.dart';
 class AppTheme {
   static final lightTheme = ThemeData(
     primaryColor: AppColors.primary,
-    scaffoldBackgroundColor: AppColors.ligthBacground,
+    scaffoldBackgroundColor: AppColors.lightBackground,
     brightness: Brightness.light,
     fontFamily: 'Satoshi',
     elevatedButtonTheme: ElevatedButtonThemeData(
@@ -22,7 +22,7 @@ class AppTheme {
   );
   static final darkTheme = ThemeData(
       primaryColor: AppColors.primary,
-      scaffoldBackgroundColor: AppColors.darkBacground,
+      scaffoldBackgroundColor: AppColors.darkBackground,
       brightness: Brightness.dark,
       fontFamily: 'Satoshi',
       elevatedButtonTheme: ElevatedButtonThemeData(

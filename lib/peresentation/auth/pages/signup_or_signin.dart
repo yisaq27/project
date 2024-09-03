@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pop/common/helpers/is_dark_mode.dart';
+import 'package:pop/common/widgets/appbar/app_bar.dart';
 import 'package:pop/common/widgets/button/basic_app_button.dart';
 import 'package:pop/core/config/assets/app_image.dart';
 import 'package:pop/core/config/assets/app_vector.dart';
@@ -15,6 +16,7 @@ class SignupOrSignin extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
+          BasicAppbar(),
           Align(
             alignment: Alignment.topRight,
             child: SvgPicture.asset(
@@ -77,10 +79,11 @@ class SignupOrSignin extends StatelessWidget {
                             child: Text(
                               'Signin',
                               style: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.bold,
-                                color: context.isDarkMode?Colors.white:Colors.black
-                              ),
+                                  fontSize: 18,
+                                  fontWeight: FontWeight.bold,
+                                  color: context.isDarkMode
+                                      ? Colors.white
+                                      : Colors.black),
                             ),
                           ),
                         )

@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
    return MultiBlocProvider(
   providers: [
-    BlocProvider<ThemeCubit>(
+    BlocProvider(
       create: (_) => ThemeCubit(),
     ),
   ],
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
           darkTheme: AppTheme.darkTheme,
           themeMode:mode,
          debugShowCheckedModeBanner: false, // Remove this line to disable debug mode banner
-          home: SplashPage(),
+          home: const SplashPage(),
         ),
       ),
     );
