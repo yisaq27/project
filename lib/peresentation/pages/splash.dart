@@ -24,6 +24,7 @@ class _SplashPageState extends State<SplashPage> {
         child: SvgPicture.asset(
           AppVectors.logo,
         ),
+        
       ),
     );
   }

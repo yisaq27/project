@@ -7,6 +7,8 @@ import 'package:pop/common/widgets/button/basic_app_button.dart';
 import 'package:pop/core/config/assets/app_image.dart';
 import 'package:pop/core/config/assets/app_vector.dart';
 import 'package:pop/core/config/theme/app_color.dart';
+import 'package:pop/peresentation/auth/pages/signin.dart';
+import 'package:pop/peresentation/auth/pages/signup.dart';
 
 class SignupOrSignin extends StatelessWidget {
   const SignupOrSignin({super.key});
@@ -16,7 +18,7 @@ class SignupOrSignin extends StatelessWidget {
     return Scaffold(
       body: Stack(
         children: [
-          BasicAppbar(),
+          const BasicAppbar(),
           Align(
             alignment: Alignment.topRight,
             child: SvgPicture.asset(
@@ -65,7 +67,14 @@ class SignupOrSignin extends StatelessWidget {
                         Expanded(
                           flex: 1,
                           child: BasicAppButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const SignupPage(),
+                                ),
+                              );
+                            },
                             title: 'Register',
                           ),
                         ),
@@ -75,7 +84,14 @@ class SignupOrSignin extends StatelessWidget {
                         Expanded(
                           flex: 1,
                           child: TextButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => const SigninPage(),
+                                ),
+                              );
+                            },
                             child: Text(
                               'Signin',
                               style: TextStyle(

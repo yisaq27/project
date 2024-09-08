@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "520645403665",
+    "project_id": "spotify404",
+    "storage_bucket": "spotify404.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520645403665:android:813c4effd93b4dc266fdb0",
+        "android_client_info": {
+          "package_name": "com.example.pop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANSN4wlJvjgFY24kD1gncvB5fUggmOax0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
